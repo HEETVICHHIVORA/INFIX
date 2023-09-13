@@ -1,0 +1,32 @@
+.bg{
+    width: 100vw;
+    height: 65vh;
+    background-color: #D9D9D9;
+    /* border: 2px solid black; */
+}
+.nav{
+    height: 10vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    box-shadow:0.3em 0.3em 1em rgba(0, 0, 0, 0.3); 
+    justify-content: space-between;
+}
+.nright{
+    padding-right: 2em;
+}
+.text{
+    padding: 2em;
+}
+.text2{
+    padding: 2em;
+}
+
+.bg2{
+    height: 35vh;
+    width: 100vw;
+    background-color: #FFD1D4;
+
+}
