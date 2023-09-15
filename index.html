@@ -5,76 +5,398 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
-    <div class="bg">
+  
+    <div class="main">
+
+        <div class="main1">
+            <h1>INFIX</h1>
+        </div>
+
+        <div class="main2">
+
+            <div class="info1">
+
+                <fieldset class="cont1">
+
+                    <legend>   BASIC INFORMATION   </legend>
+
+                    <div class="Q1">
+                        <div class="q1">
+
+                            <label for="tbuser">Please enter your name</label> <br>
+                            <input type="text" id="name" class="inputbox">
+
+
+                        </div>
+
+                        <div class="q2">
+
+                            <label for="q1">What is you age</label><br>
+                            <input type="text" id="age" class="inputbox">
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="Q1">
+                        <div class="q1">
+
+                            <label for="q1">Estimate your monthly earning</label><br>
+                        <input type="text" id="income1" class="inputbox">
+
+
+                        </div>
+
+                        <div class="q2">
+
+                            <label for="q1">Enter expenditure(covers premiums)</label><br>
+                            <input type="text" id="exp1" class="inputbox">
+
+                        </div>
+                        
+                    </div>
+
+                </fieldset>
+
+            </div>
+
+
+            
         
-         <div class="nav">
-          <div class="text">Home</div>  
-          <div class="nright">
-            <p class="text2">About</p>
-            <p class="text2">Contact us</p>
-         </div> 
-         </div>
 
-         <div class="mid">
-            <div class="mid1">
-                <img src="logo.png" alt="" class="logo">
+        <div class="main2">
+
+            <div class="info1">
+
+                <fieldset class="cont1">
+
+                    <legend>   Additional info    </legend>
+
+                    <div class="Q1">
+                        <div class="q1">
+
+                            <label for="q1">Enter expenditure on kids(all expenses) <br>(per month)</label><br>
+                        <input type="text" id="exp2" class="inputbox">
+
+
+                        </div>
+
+                        <div class="q2">
+
+                            <label for="q1">Enter total investments made <br>(which give fix return)</label><br>
+                            <input type="text" id="inv1" class="inputbox">
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="Q1">
+                        <div class="q1">
+
+                            <label for="q1">Enter total investments made <br>(which give uneven return)</label><br>
+                        <input type="text" id="inv2" class="inputbox">
+
+
+                        </div>
+
+                        <div class="q2">
+
+                            <label for="q1">Add the income from the two invesments <br> and enter (permonth)
+                            </label><br>
+                            <input type="text" id="income2" class="inputbox">
+
+                        </div>
+                        
+                    </div>
+
+                </fieldset>
+
             </div>
-            <div class="mid2">INFIX</div>
-            <div class="mid3">your customised financial advisory platform</div>
-            <div class="mid4">try findoc+ now!!</div>
-         </div>
+
+        </div>
+
+
         
-    </div>
-    <div class="bg2">
-        <div class="downleft">
-            <div class="dlu">
-                why invest?
-            </div>
-            <div class="dld">
-
-Investment is like your 
-second child ,<br> investing wisely 
-will help you beat inflation .
-
-            </div>
-        </div>
-        <div class="downmid">
-            <div class="dlu">
-                why save?
-            </div>
-            <div class="dld">
-
-Saving and keeping liquid 
-money will always help you 
-in emergency situations.
-
-            </div>
-        </div>
-        <div class="downright">
-            <div class="dlu">
-                why INFIX?
-            </div>
-            <div class="dld">
-
-INFIX analyses your financial 
-health and gives you research
-backed advice .
-
-
-            </div>
-        </div>
-        <div class="downsmall">
-            Explore-learn-invest-with Infix
-        </div>
         
+
+        <div class="main2">
+
+            <div class="info1">
+
+                <fieldset class="cont1">
+
+                    <legend>   loan details </legend>
+
+                    <div class="Q1">
+                        <div class="q1">
+
+                            <label for="q1">how much emi do you pay monthly?</label><br>
+                        <input type="text" id="emi" class="inputbox">
+
+
+                        </div>
+
+                        <div class="q2">
+
+                            <label for="q1">total loan amount</label><br>
+                            <input type="text" id="loan" class="inputbox">
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="Q1">
+                        <div class="q1">
+
+                            <label for="q1">Amount of health insurance covered</label><br>
+                            <input type="text" id="ins" class="inputbox">
+
+
+                        </div>
+
+                        <div class="q2">
+
+                            <label for="q1">savings(liquid cahs)</label><br>
+                            <input type="text" id="save" class="inputbox">
+
+                        </div>
+                        
+                    </div>
+
+                </fieldset>
+
+            </div>
+
+        
+
     </div>
-    <div class="footer">
-        **Any investment advice from INFIX is subjected to market risk please invest wisely ,INFIX 
-is not responsible for your profit or loss** 
+
+    <!-- <div class="outcomes">
+        <p class="1"></p>
+        <p class="2"></p>
+        <p class="3"></p>
+    </div> -->
+
+
+
+
+
+
     </div>
+    <input type="button" id="btn1" class="outcomebutton" value="compute outcomes">
+
+    <p class="output" id="output1"></p>
+
+    <!-- <script>
+        const i1 = document.getElementById('income1');
+        const i2 = document.getElementById('income2');
+        const age = document.getElementById('age');
+        const e1 = document.getElementById('exp1');
+        const e2 = document.getElementById('exp2');
+        const in2 = document.getElementById('inv2');
+        const em = document.getElementById('emi');
+        const loan = document.getElementById('loan');
+        const insurance = document.getElementById('ins');
+        const savings = document.getElementById('save');
+        const btn1 = document.getElementById('btn1');
+        const out1 = document.getElementById('output1');
+    
+        function fun1() {
+          const age = age.value;
+
+          out1.innerText = `Age: ${age}`;
+        }
+    
+        btn1.addEventListener('click', fun1);
+    
+        // Function to reset the page
+        function resetPage() {
+          txt1.value = ''; // Clear input value
+          out1.innerText = ''; // Clear output text
+        }
+    
+        // Call the resetPage function when the page loads or refreshes
+        window.addEventListener('load', resetPage);
+      </script> -->
+
+
+
+      <script>
+        const ageInput = document.getElementById('age');
+        const income1Input = document.getElementById('income1');
+        const income2Input = document.getElementById('income2');
+        const exp1Input = document.getElementById('exp1');
+        const exp2Input = document.getElementById('exp2');
+        const inv1Input = document.getElementById('inv1');
+        const inv2Input = document.getElementById('inv2');
+        const emiInput = document.getElementById('emi');
+        const loanInput = document.getElementById('loan');
+        const insInput = document.getElementById('ins');
+        const saveInput = document.getElementById('save');
+        const btn1 = document.getElementById('btn1');
+        const out1 = document.getElementById('output1');
+    
+        function fun1() {
+            const age = parseFloat(ageInput.value);
+            const income1 = parseFloat(income1Input.value);
+            const income2 = parseFloat(income2Input.value);
+            const totalIncome = income1 + income2;
+            const exp1 = parseFloat(exp1Input.value);
+            const exp2 = parseFloat(exp2Input.value);
+            const inv1 = parseFloat(inv1Input.value);
+            const expen = exp1+exp2;
+            const inv2 = parseFloat(inv2Input.value);
+            const emi = parseFloat(emiInput.value);
+            const loan = parseFloat(loanInput.value);
+            const ins = parseFloat(insInput.value);
+            const save = parseFloat(saveInput.value);
+    
+            // Display input values
+            out1.innerHTML = `
+                Age: ${age}<br>
+                Monthly Earning: ${income1}<br>
+                Income from Investments: ${income2}<br>
+                Expenditure: ${exp1}<br>
+                Expenditure on Kids: ${exp2}<br>
+                Total Investments with Uneven Returns: ${inv2}<br>
+                Monthly EMI: ${emi}<br>
+                Total Loan Amount: ${loan}<br>
+                Health Insurance Coverage: ${ins}<br>
+                Savings (Liquid Cash): ${save}<br>
+            `;
+    
+            // Check if emi is less than total income
+            if (age<30) {
+                if (emi >= totalIncome - expen / 2 && (emi<totalIncome-expen)) {
+                    out1.innerHTML += '<br>You have a Moderate financial health';
+                } else if (emi<totalIncome/2-expen){
+                    out1.innerHTML += '<br>You have a safe financial health';
+                }
+                else {
+                out1.innerHTML += '<br>You have a unsafe financial health';
+                }
+                if(emi>(loan*0.15))
+                {
+                    out1.innerHTML += '<br>You have taken a bad loan';
+ 
+                }
+                else{
+                    out1.innerHTML += '<br> You have taken a good loan';
+                }
+
+                if(loan>save){
+                    out1.innerHTML += '<br> Please reduce your loan';
+                }
+
+
+                if(ins<300000){
+                    out1.innerHTML += '<br> Please increase your health insurance';
+                }
+
+                if(expen>(totalIncome-emi)/1.8){
+                    out1.innerHTML += '<br> Please control your expenses';
+                }
+                else{
+                    out1.innerHTML += '<br> Expenses sorted ';
+                }
+
+                if(inv2>1.5*inv1){
+                    out1.innerHTML += '<br> Its good that you are taking risks but incline a bit towards safe options also  ';
+
+                }
+                if(inv1>inv2){
+                    out1.innerHTML += '<br> You are young and can experiment in a bit risky options also' ;
+
+                }
+                if(inv1>inv2){
+                    out1.innerHTML += '<br> You are young and can experiment in a bit risky options also' ;
+
+                }
+                if((inv2<1.5*inv1)&&(inv2>inv1)){
+                    out1.innerHTML += '<br> You are on a sweet spot in terms of investments' ;
+                   
+                }
+                
+                
+                
+
+                out1.innerHTML += '<br> We have a detailed investment plan for you please click the below link ';
+                out1.innerHTML += '<br> "link" ';
+
+
+
+                // if (loan > (save + inv2)) {
+                //     out1.innerHTML += ' Please pay off your loan as soon as possible.';
+                // } else {
+                //     out1.innerHTML += ' You can pay off a part of your loan from your savings.';
+                // }
+            }
+
+
+
+            
+        }
+    
+           
+            
+        
+    
+        btn1.addEventListener('click', fun1);
+    
+        // Function to reset the page
+        function resetPage() {
+            const inputFields = document.querySelectorAll('.inputbox');
+            inputFields.forEach((input) => {
+                input.value = '';
+            });
+            out1.innerHTML = '';
+        }
+    
+        // Call the resetPage function when the page loads or refreshes
+        window.addEventListener('load', resetPage);
+    </script>
+    
     
     
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- if (age > 60 && ins < 600000) {
+    out1.innerHTML += '<br>Please take more health insurance.';
+}
+
+// Check if expenditure is more than 40% of total income
+if ((exp1 + exp2) > (0.4 * totalIncome)) {
+    out1.innerHTML += '<br>Please control your expenses.';
+}
+
+// Custom criteria for safe, moderate, or unsafe
+if (age < 30) {
+    if (emi > (0.5 * totalIncome)) {
+        out1.innerHTML += '<br>a';
+    } else {
+        out1.innerHTML += '<br>Please clear your loans.';
+    }
+}
+
+if (age > 50) {
+    if (emi < (0.6 * totalIncome)) {
+        out1.innerHTML += '<br>k';
+    }
+} -->
