@@ -28,6 +28,7 @@ body{
 }
 .text{
     padding: 2em;
+    text-decoration: none;
 }
 .text2{
     padding: 1.5em;
@@ -78,6 +79,7 @@ body{
     font-size: larger;
     margin-top: 5vh;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 .downleft{
     height: 25vh;
