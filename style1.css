@@ -9,6 +9,7 @@ body{
 }
 .mid5{
     text-decoration: none;
+    color: black;
 }
 .bg{
     width: 100vw;
@@ -84,6 +85,7 @@ body{
     margin-top: 5vh;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    color: black;
 }
 .downleft{
     height: 25vh;
